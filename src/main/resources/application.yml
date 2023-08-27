@@ -1,0 +1,17 @@
+spring:
+  application:
+    name: wiremock-service
+  main:
+    web-application-type: none
+
+wiremock:
+  server:
+    files: classpath:/__files
+    stubs: classpath:/mappings
+
+logging:
+  level:
+    org.springframework.cloud.contract.wiremock: debug
+    org.springframework.web.client: debug
+    com.github.tomakehurst.wiremock: trace
+

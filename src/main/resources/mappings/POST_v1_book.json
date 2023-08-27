@@ -1,0 +1,32 @@
+{
+    "request": {
+        "method": "POST",
+        "url": "/v1/book",
+        "bodyPatterns": [
+            { "matchesJsonPath": "$.[?(@.id)]" },
+            { "matchesJsonPath": "$.description" },
+            { "matchesJsonPath": "$.isbn" },
+            { "matchesJsonPath": "$.page" },
+            { "matchesJsonPath": "$.price" },
+            { "matchesJsonPath": "$.title" },
+            { "matchesJsonPath": "$.authorId" }
+        ]
+    },
+    "response": {
+        "status": 201,
+        "headers": {
+            "Content-Type": "application/json",
+            "Access-Control-Allow-Origin": "*",
+            "Access-Control-Allow-Methods": "*"
+        },
+        "jsonBody": {
+            "id": 1,
+            "description": "netus et malesuada",
+            "isbn": "X4J 5H8",
+            "page": 120,
+            "price": 451.0,
+            "title": "best book",
+            "authorId": 9
+        }
+    }
+}

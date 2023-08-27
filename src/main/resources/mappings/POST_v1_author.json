@@ -1,0 +1,24 @@
+{
+    "request": {
+        "method": "POST",
+        "url": "/v1/book",
+        "bodyPatterns": [
+            { "matchesJsonPath": "$.[?(@.id)]" },
+            { "matchesJsonPath": "$.firstname" },
+            { "matchesJsonPath": "$.lastname" }
+        ]
+    },
+    "response": {
+        "status": 201,
+        "headers": {
+            "Content-Type": "application/json",
+            "Access-Control-Allow-Origin": "*",
+            "Access-Control-Allow-Methods": "*"
+        },
+        "jsonBody": {
+            "id": 1,
+            "firstname": "John",
+            "lastname": "Doe"
+        }
+    }
+}

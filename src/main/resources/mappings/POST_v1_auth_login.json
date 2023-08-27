@@ -1,0 +1,32 @@
+{
+  "request": {
+    "method": "POST",
+    "url": "/v1/login",
+    "bodyPatterns": [
+      { "matchesJsonPath": "$.login" },
+      { "matchesJsonPath": "$.password" }
+    ]
+  },
+  "response": {
+    "status": 200,
+    "headers": {
+      "Content-Type": "application/json",
+      "Access-Control-Allow-Origin": "*",
+      "Access-Control-Allow-Methods": "*"
+    },
+    "jsonBody": {
+        "access_token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX25hbWUiOiJzeXN0ZW0iLCJ0aW1lem9uZSI6IlVUQyIsInJvbGVzIjpbIlJPTEVfTURfU0VUX0FETUlOIl0sImF2YXRhciI6bnVsbCwiYXV0aG9yaXRpZXMiOlsiTURfU0VUX0FETUlOIl0sImNsaWVudF9pZCI6Im9hdXRoX2NsaWVudF9pZCIsImF1ZCI6WyJyZXNvdXJjZV9pZCJdLCJzY29wZSI6WyJyb2xlX2FkbWluIiwicm9sZV91c2VyIl0sImRlZmF1bHRsb2NhbCI6ImZyIiwiaWQiOiI2MGFkMzMyZWY1MTg2N2I0NDhkZjE2MjIiLCJmdWxsbmFtZSI6InN5c3RlbSBhZG1pbiIsImV4cCI6MTYyMjc0MjA3Niwiam9iIjpudWxsLCJqdGkiOiI0NzFhMmEzZi0wY2UxLTRlNDMtOTNhNy0yZDhlODE3ZTk1ZTIiLCJlbWFpbCI6ImJvb3R0ZWNobm9sb2dpZXMuY2lAZ21haWwuY29tIiwiZGF0ZWZvcm1hdCI6IkREL01NL1lZWVkifQ.uyISDckvXXCk9Oqb8h-llOK6z05gmDzEESNZ45XBLLs",
+        "token_type": "bearer",
+        "refresh_token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX25hbWUiOiJzeXN0ZW0iLCJ0aW1lem9uZSI6IlVUQyIsInJvbGVzIjpbIlJPTEVfTURfU0VUX0FETUlOIl0sImF2YXRhciI6bnVsbCwiYXV0aG9yaXRpZXMiOlsiTURfU0VUX0FETUlOIl0sImNsaWVudF9pZCI6Im9hdXRoX2NsaWVudF9pZCIsImF1ZCI6WyJyZXNvdXJjZV9pZCJdLCJzY29wZSI6WyJyb2xlX2FkbWluIiwicm9sZV91c2VyIl0sImF0aSI6IjQ3MWEyYTNmLTBjZTEtNGU0My05M2E3LTJkOGU4MTdlOTVlMiIsImRlZmF1bHRsb2NhbCI6ImZyIiwiaWQiOiI2MGFkMzMyZWY1MTg2N2I0NDhkZjE2MjIiLCJmdWxsbmFtZSI6InN5c3RlbSBhZG1pbiIsImV4cCI6MTYyMjc2MDA3Niwiam9iIjpudWxsLCJqdGkiOiIyYmVlODZkMy1jZGFiLTQ0NmYtYmIwNi1iYTcxNjgwYTU5NTciLCJlbWFpbCI6ImJvb3R0ZWNobm9sb2dpZXMuY2lAZ21haWwuY29tIiwiZGF0ZWZvcm1hdCI6IkREL01NL1lZWVkifQ.HZsmMgPaBllRfx8lDOX8OBupnzn9tJ7-6wK6PjrWk5s",
+        "expires_in": 3599,
+        "scope": "role_admin role_user",
+        "id": "60ad332ef51867b448df1622",
+        "email": "bootlabs@gmail.com",
+        "username": "admin",
+        "roles": [
+          "ROLE_MD_SET_ADMIN"
+        ],
+        "jti": "471a2a3f-0ce1-4e43-93a7-2d8e817e95e2"
+    }
+  }
+}

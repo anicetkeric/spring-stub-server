@@ -1,0 +1,23 @@
+{
+  "request": {
+    "method": "GET",
+    "urlPattern": "/v1/book/([0-9]*)"
+  },
+  "response": {
+    "status": 200,
+    "headers": {
+      "Content-Type": "application/json",
+      "Access-Control-Allow-Origin": "*",
+      "Access-Control-Allow-Methods": "*"
+    },
+    "jsonBody": {
+        "id": 1,
+        "description": "netus et malesuada",
+        "isbn": "X4J 5H8",
+        "page": 62,
+        "price": 529.0,
+        "title": "arcu. Vestibulum ut",
+        "authorId": 9
+      }
+  }
+}

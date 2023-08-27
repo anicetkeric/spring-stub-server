@@ -1,0 +1,19 @@
+{
+  "request": {
+    "method": "GET",
+    "url": "/v1/author/1"
+  },
+  "response": {
+    "status": 200,
+    "headers": {
+      "Content-Type": "application/json",
+      "Access-Control-Allow-Origin": "*",
+      "Access-Control-Allow-Methods": "*"
+    },
+    "jsonBody": {
+        "id": 1,
+        "firstname": "John",
+        "lastname": "Doe"
+      }
+  }
+}
